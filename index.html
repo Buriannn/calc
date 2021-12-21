@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+<div class="wrap">
+    <form class="form" action="" onsubmit="return false;">
+
+        <div class="form__item">
+            <label class="form__label" for="one-number">
+                <p class="form__label-text">Введите число:</p>
+            </label>
+            <input class="form__input form__input--one" id="one-number" type="number" required>
+        </div>
+
+        <div class="form__item">
+            <label class="form__label" for="two-number">
+                <p class="form__label-text">Введите число:</p>
+            </label>
+            <input class="form__input form__input--two" id="two-number" type="number" required>
+        </div>
+
+
+
+        <label class="form__label">
+            Выберите нужную операцию:
+            <select class="form__select" name="" id="">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+        </label>
+        <p class="error-value">Ошибка! Некорректные данные</p>
+
+        <p class="form__answer"></p>
+        <button class="form__btn">Отправить</button>
+    </form>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
